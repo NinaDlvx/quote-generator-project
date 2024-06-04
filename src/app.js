@@ -15,6 +15,9 @@ function generateQuote(event) {
   let context = `You're a philosophical AI assistant that can make up inspiring quotes. Always provide a quote in italics in a <p>, add an Author if it's known and sign of with <strong>Provided by SheCodes AI</strong>.`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let quoteElement = document.querySelector("#quote");
+  quoteElement.classList.remove("hidden");
+  quoteElement.innerHTML = `<div class="generating">Generating...</div>`;
   axios.get(apiUrl).then(displayQuote);
 }
 
