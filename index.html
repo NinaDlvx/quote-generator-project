@@ -6,17 +6,39 @@
     <link rel="stylesheet" href="src/style.css" />
     <title>Another Quote Generator</title>
   </head>
-
   <body>
+    <header>
+      <h1>AI Quote Generator</h1>
+    </header>
+    <main>
+      <form>
+        <input
+          type="text"
+          placeholder="Enter a topic..."
+          autofocus
+          autocomplete="off"
+          required
+        />
+        <input type="submit" value="Generate quote" />
+      </form>
+      <div>
+        generated quote will go here <br />
+        generated quote will go here
+      </div>
+    </main>
     <footer>
       This AI Project was coded by
-      <a href="https://github.com/NinaDlvx">Nina Delvaux</a>, <br />
+      <a href="https://github.com/NinaDlvx" target="_blank">Nina Delvaux</a>,
+      <br />
       is
-      <a href="https://github.com/NinaDlvx/quote-generator-project"
+      <a
+        href="https://github.com/NinaDlvx/quote-generator-project"
+        target="_blank"
         >open-sourced on Github</a
       >
       and
-      <a href="https://another-quote-generator.netlify.app">hosted on Netlify</a
+      <a href="https://another-quote-generator.netlify.app" target="_blank"
+        >hosted on Netlify</a
       >.
     </footer>
     <script src="src/app.js"></script>
